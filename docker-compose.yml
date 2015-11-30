@@ -1,5 +1,5 @@
 stream:
-  build: ./docker-nginx-rtmp
+  image: aevumdecessus/docker-nginx-rtmp
   hostname: streamfrag
   volumes:
     - ./src/nginx.conf:/config/nginx.conf
