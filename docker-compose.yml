@@ -3,6 +3,6 @@ stream:
   hostname: streamfrag
   volumes:
     - ./src/nginx.conf:/config/nginx.conf
-    - ./data:/recordings
+    - ./recordings:/recordings
   ports:
     - "1935:1935"
