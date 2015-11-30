@@ -1,0 +1,8 @@
+stream:
+  build: ./docker-nginx-rtmp
+  hostname: streamfrag
+  volumes:
+    - ./src/nginx.conf:/config/nginx.conf
+    - ./data:/recordings
+  ports:
+    - "1935:1935"
