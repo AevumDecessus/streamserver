@@ -40,7 +40,7 @@ if hash docker-compose 2>/dev/null; then
     # Run our server
     docker-compose up -d
     if [ $LOGGING = 1 ]; then
-        docker-compose logs
+        docker-compose logs --follow --timestamps
         if [ $STOP = 1 ]; then
             docker-compose stop
             if [ $DELETE = 1 ]; then
